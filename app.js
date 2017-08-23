@@ -23,36 +23,35 @@ app.set('view engine', 'mustache')
 let hardCodedArray = [{
     'name': 'Mario Party',
     'general': {
-      'platform': ['pc', 'xbox', 'ps4']
-      'genre': ['minigames', 'party', 'shooter', 'puzzle', 'strategy']
-      'numberOfPlayers': 1 - 8,
+      'platform': ['pc', 'xbox', 'ps4'],
+      'genre': ['minigames', 'party', 'shooter', 'puzzle', 'strategy'],
+      'numberOfPlayers': '1 - 8',
     }
   },
   {
     'name': 'Legend of Zelda',
     'general': {
-      'platform': ['nintendo', 'ds']
-      'genre': ['minigames', 'party', 'shooter', 'puzzle', 'strategy']
-      'numberOfPlayers': 1 - 8,
+      'platform': ['nintendo', 'ds'],
+      'genre': ['minigames', 'party', 'shooter', 'puzzle', 'strategy'],
+      'numberOfPlayers': '1 - 8',
     }
-  }
+  },
   {
     'name': 'Gears of War',
     'general': {
-      'platform': ['xbox', 'ps4', 'pc']
-      'genre': ['shooter']
-      'numberOfPlayers': 1 - 8,
+      'platform': ['xbox', 'ps4', 'pc'],
+      'genre': ['shooter'],
+      'numberOfPlayers': '1 - 8',
     }
   }
 ]
 
 app.get('/', function(req, res) {
-  console.log('phil get');
-  console.log('line 75');
-
-
+  console.log('we are able to get and do inital render');
+  res.render('index',{ tempobject : hardCodedArray })
+});
 
 
 app.listen(3000, function() {
-  console.log('Successfully started express application!');
+  console.log('Successfully started express application!')
 })
