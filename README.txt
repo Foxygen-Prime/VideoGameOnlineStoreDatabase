@@ -28,3 +28,7 @@ Created Readme.txt
   3. Added git
   4. Git ignores node
   5. Submitted initial commit to GitHub
+  6. fixed missing packages
+  7. Created a hardcoded list to test posting
+  8. Added app.get to have page render on local directory load
+  9. Added app.post to test hardcoding render
