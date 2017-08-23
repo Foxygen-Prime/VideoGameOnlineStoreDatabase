@@ -1,5 +1,7 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +10,24 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 </head>
+
 <body>
   <h1>hi</h1>
   <div class="">
-    {{hardCodedArray}}
-
-    <p>{{name}}</p>
-
-{{/hardCodedArray}}
+    <form class="" action="index.html" method="post">
+      <input type="text" name="userInput" value="" placeholder="Enter a game">
+      <button type="button" name="buttonForUserInput"></button>
+    </form>
+    <div class="">
+      {{#tempObject}}
+        <p>{{name}}</p>
+      {{/tempObject}}
+    </div>
   </div>
 
 
-<script src="app.js" charset="utf-8" type="text/javascript">
-</script>
+  <script src="app.js" charset="utf-8" type="text/javascript">
+  </script>
 </body>
+
 </html>

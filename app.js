@@ -46,9 +46,10 @@ let hardCodedArray = [{
   }
 ]
 
+
 app.get('/', function(req, res) {
   console.log('we are able to get and do inital render');
-  res.render('index',{ tempobject : hardCodedArray })
+  res.render('index',{ tempObject : hardCodedArray })
 });
 
 
