@@ -5,7 +5,7 @@ Created Readme.txt
 - Installed NPM (NPM init --yes)
 - Installed express
 - Installed mustache
-- Installed express-mustache
+- Installed mustache-express
 - Installed mongoose-bluebird(npm install mongoose@4.10.8 bluebird --save)
 
 -Created views directory

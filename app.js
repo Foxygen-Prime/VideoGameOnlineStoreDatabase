@@ -3,7 +3,7 @@ const mustacheExpress = require('mustache-express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost:27017/*CHANGE THIS TO REFLECT DB NAME*');
+// mongoose.connect('mongodb://localhost:27017/*CHANGE THIS TO REFLECT DB NAME*');
 
 
 const app = express();
