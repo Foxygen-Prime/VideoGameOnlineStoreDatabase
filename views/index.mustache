@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,14 +13,14 @@
 <body>
   <h1>hi</h1>
   <div class="">
-    <form class="" action="index.html" method="post">
-      <input type="text" name="userInput" value="" placeholder="Enter a game">
-      <button type="button" name="buttonForUserInput"></button>
+    <form class="searchForm" action="/" method="post">
+      <input type="text" name="userInput" value="" placeholder="Add a game">
+      <button type="button" name="buttonForUserInput">Submit this</button>
     </form>
     <div class="">
-      {{#tempObject}}
+      {{#object}}
         <p>{{name}}</p>
-      {{/tempObject}}
+      {{/object}}
     </div>
   </div>
 

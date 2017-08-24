@@ -6,6 +6,7 @@ Created Readme.txt
 - Installed express
 - Installed mustache
 - Installed mustache-express
+- Installed mongodb
 - Installed mongoose-bluebird(npm install mongoose@4.10.8 bluebird --save)
 
 -Created views directory
@@ -38,5 +39,27 @@ Created Readme.txt
   13. Inside my hardCodedArray mustache tags, added a tag specifically for {{name}}
   14. Information successfully rendering to index
   15. created a form with a post action to the index
-  16. Added an input with a temporary name inside the form
+  16. Added an input with a temporary name inside the form (userInput)
   17. Added a button input below my form
+  18. added app.post function
+  19. commented out hardCodedArray- removed link to this in app.get function and mustache index body
+  20.practiced adding a single entry- name is only required field. Thank you Eli. "you are NOT welcome" - Eli.
+  21.Added "videoGameLibrary" mongoose connection method to create a standby name for database
+  22.Created a practice const var: "
+  const exampleGameEntry =
+  new videoGameData ({name : 'Shadow of the Colossus', platform :['pc', 'ps4']});
+  "declaring a new instance (entry to the database consistent with schema in schema.js) with a console.log
+  23. Confirmed log
+  24. launched mongo in node
+  25.  show dbs
+  26. Confirmed existence of library defined in mongoose connection method
+  27. Added function at the very bottom of app.js to exit mongo and close out (process.on('SIGINT'))
+  28. Add A Styles directory
+  29. Added a styles.css sheet
+  30. Created classes for divs around form- did minor stylizing
+
+
+
+  show collections
+use the name
+db."name of collection".find()
