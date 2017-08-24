@@ -13,14 +13,16 @@
 <body>
   <h1>hi</h1>
   <div class="">
-    <form class="searchForm" action="/" method="post">
+    <form class="searchForm" action="/games" method="post">
       <input type="text" name="userInput" value="" placeholder="Add a game">
-      <button type="button" name="buttonForUserInput">Submit this</button>
+      <input type="submit" name="buttonForUserInput" placeholder="Submit This">
     </form>
     <div class="">
       {{#object}}
-        <p>{{name}}</p>
-      {{/object}}
+      <form class="" action="/delete/{{name}}" method="post">
+        <input type="submit" name="deleteButton" placeholder="Delete" ><p>{{name}}</p>
+    </form>
+    {{/object}}
     </div>
   </div>
 

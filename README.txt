@@ -52,11 +52,16 @@ Created Readme.txt
   23. Confirmed log
   24. launched mongo in node
   25.  show dbs
-  26. Confirmed existence of library defined in mongoose connection method
-  27. Added function at the very bottom of app.js to exit mongo and close out (process.on('SIGINT'))
-  28. Add A Styles directory
-  29. Added a styles.css sheet
-  30. Created classes for divs around form- did minor stylizing
+    -use "name of database"
+    -show collections
+    -db."name of collection".find()
+  26. Confirmed existence of library defined in mongoose connection method- confirmed the data made it into the collection.
+  27. Commented out my code that added the new document instance.
+  28. Added function at the very bottom of app.js to exit mongo and close out (process.on('SIGINT'))
+  29. Added an app.get code block with a log to confirm it runs
+  30. Ran a mongoose promise retrieval code in that function using the collection name found in my schema file (as opposed to the one recognized in the node shell for mongo) "videoGameData"- used a then promised with an anonymous function taking the name of the collection (as recognized in the node shell, "videogamedatas") as the parameter and the value of a token property, 'object' (also found in my mustache body). Set to render on my mustache index page on the root.
+
+
 
 
 
